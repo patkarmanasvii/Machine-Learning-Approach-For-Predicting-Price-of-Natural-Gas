@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+
+{% block title %}About - Natural Gas Prediction{% endblock %}
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+{% block content %}
+<div class="jumbotron text-center" style="background-image: url('{{ url_for('static', filename='about-bg.jpg') }}'); background-size: cover; color: white; padding: 5rem 2rem;">
+    <div class="overlay" style="background: rgba(0, 0, 0, 0.5); padding: 2rem;">
+        <h1 class="display-4">About Us</h1>
+        <p class="lead">This application predicts natural gas prices based on historical data using advanced analytics.</p>
+    </div>
+</div>
+
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-8">
+            <h2>Our Mission</h2>
+            <p>At Natural Gas Prediction, our mission is to provide accurate and reliable predictions for natural gas prices. We leverage cutting-edge data analysis techniques and industry expertise to help our users stay ahead in the market.</p>
+            <h2>Our Vision</h2>
+            <p>We aim to be the leading provider of natural gas price predictions, empowering businesses and individuals with the tools they need to make informed decisions.</p>
+        </div>
+        <div class="col-md-4">
+            <h2>Contact Us</h2>
+            <p>If you have any questions or need further information, feel free to contact us:</p>
+            <ul class="list-unstyled">
+                <li><strong>Email:</strong> patkarmanasvi7@gmail.com</li>
+                <li><strong>Phone:</strong> +91 9769692447</li>
+            </ul>
+        </div>
+    </div>
+</div>
+{% endblock %}

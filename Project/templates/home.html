@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+
+{% block title %}Home - Natural Gas Prediction{% endblock %}
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+{% block content %}
+<div class="jumbotron text-center" style="background-image: url('{{ url_for('static', filename='home-bg.jpg') }}'); background-size: cover; color: white; padding: 5rem 2rem;">
+    <div class="overlay" style="background: rgba(0, 0, 0, 0.5); padding: 2rem;">
+        <h1 class="display-4">Welcome to Natural Gas Price Prediction</h1>
+        <p class="lead">Your reliable tool for predicting natural gas prices with advanced analytics.</p>
+        <a class="btn btn-primary btn-lg" href="{{ url_for('predict') }}" role="button">Get Started</a>
+    </div>
+</div>
+
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card">
+                <img src="{{ url_for('static', filename='img1.jpg') }}" class="card-img-top" alt="Data Analysis">
+                <div class="card-body">
+                    <h5 class="card-title">Data Analysis</h5>
+                    <p class="card-text">Utilize cutting-edge data analysis techniques to predict natural gas prices accurately.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <img src="{{ url_for('static', filename='img2.jpg') }}" class="card-img-top" alt="Market Trends">
+                <div class="card-body">
+                    <h5 class="card-title">Market Trends</h5>
+                    <p class="card-text">Stay ahead of market trends with our real-time predictive analytics tools.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <img src="{{ url_for('static', filename='img3.jpg') }}" class="card-img-top" alt="Expert Insights">
+                <div class="card-body">
+                    <h5 class="card-title">Expert Insights</h5>
+                    <p class="card-text">Gain insights from industry experts and leverage their knowledge for better predictions.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
